@@ -1,5 +1,6 @@
 import react from "react";
 import { Formik, Form, Field } from "formik";
+import { FormikDebug } from "formik-antd";
 
 interface UserViewModel {
   firstName: string;
@@ -35,6 +36,9 @@ export function TryBasicForm() {
           It passes onChange, onBlur, value to the element   */}
           <Field id="firstName" name="firstName" placeholder="First name" />
           <button type="submit">Submit</button>
+          <h4>FormikDebug demonstrates what is formik:</h4>
+          {/* FormikDebug should be placed inside the formik component. It is super helpful: */}
+          <FormikDebug />
         </Form>
       </Formik>
     </>
