@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { TryBasicForm } from "./features/tryBasicForm";
-import { TryValidationAndErrors } from "./features/tryValidationAndErrors";
+import { TryValidation } from "./features/validation/tryValidation";
+import { TrySchemaValidation } from "./features/validation/trySchemaValidation";
 
 export function App() {
   return (
@@ -13,7 +14,9 @@ export function App() {
       <TryBasicForm />
       <hr />
       <h3>Try Formik validation and validation errors</h3>
-      <TryValidationAndErrors />
+      <TryValidation />
+      <h3>Try Formik schema validation and validation errors</h3>
+      <TrySchemaValidation />
     </>
   );
 }
